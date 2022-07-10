@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ninja Money</title>
+</head>
+<body>
+    <div class="nav">
+        <p>Your Gold: {{num_gold}}</p>
+    </div>
+    <form class="flex" action = '/process_money' method = 'post'>   
+        <div class ="box">
+            <h4>Farm</h4>
+            <p>(earns 10-20 golds)</p>
+            <button type = 'submit' value = 'farm' name = 'button'>Find Gold!</button>
+        </div>
+        <div class ="box">
+            <h4>Cave</h4>
+            <p>(earns 5-10 golds)</p>
+            <button type = 'submit' value = 'cave' name = 'button'>Find Gold!</button>
+        </div>
+        <div class ="box">
+            <h4>House</h4>
+            <p>(earns 2-5 golds)</p>
+            <button type = 'submit' value = 'house' name = 'button'>Find Gold!</button>
+        </div>
+        <div class ="box">
+            <h4>Casino</h4>
+            <p>(earns/takes 0-50 golds)</p>
+            <button type = 'submit' value = 'casino' name = 'button'>Find Gold!</button>
+        </div>
+    </form>
+    <div>
+        <p>Activity log:</p>
+        <div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
